@@ -1,4 +1,4 @@
-C:\Projects\energy-security-dashboards\README.md# Oil and LNG Physical-Balance Dashboards
+# Oil and LNG Physical-Balance Dashboards
 
 *A transit log for the Strait of Hormuz and its effects on global
 balances for crude oil, refined products, and LNG.*
