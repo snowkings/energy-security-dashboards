@@ -18,8 +18,8 @@ identified run under one identified basis version.
 2026-08-27 (pipeline and production).*
 
 **No score, weight, threshold or alert is produced from the LNG dashboard.**
-The physical chain runs liquefaction → carrier → terminal → pipeline → storage
-→ withdrawal, and this system observes only the European end of it.
+The gas chain runs liquefaction → carrier → terminal → pipeline → storage →
+withdrawal, and the dashboard observes only parts of its European end.
 
 What the seven cards establish, and what each one refuses to claim:
 
@@ -154,9 +154,9 @@ underlying measurements.
 ![The seven physical tests — crossings, exports, buffer and refinery runs](assets/oil-05-physical-tests.png)
 
 The disruption is traced across four of the seven physical tests, on a common
-timeline from pre-escalation to the current evidence date. The Gulf-exports
-panel draws the export series and near-zero bypass bars separately rather than
-combining them.
+timeline from pre-escalation to the current evidence date. The panel for
+Persian Gulf producer exports draws the export series and near-zero bypass bars
+separately rather than combining them.
 
 ![Prices, product cracks and US weekly inventories](assets/oil-06-prices.png)
 

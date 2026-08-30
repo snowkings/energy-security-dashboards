@@ -1,4 +1,4 @@
-# Oil and LNG Physical-Balance Dashboards
+C:\Projects\energy-security-dashboards\README.md# Oil and LNG Physical-Balance Dashboards
 
 *A transit log for the Strait of Hormuz and its effects on global
 balances for crude oil, refined products, and LNG.*
@@ -7,7 +7,7 @@ balances for crude oil, refined products, and LNG.*
 
 ## Why I created these dashboards
 
-The most consequential physical question during the Gulf disruption — how much
+The most consequential physical question during the Strait disruption — how much
 energy is actually moving through the Strait of Hormuz — was being answered
 mostly by political assertions.
 
@@ -15,7 +15,7 @@ Vessel counts and transit figures circulated widely. Almost none disclosed how
 the figure was derived:
 
 - **What was counted.** Crude tankers? Product tankers? LNG carriers? All hulls
-  including bunkering and support traffic? The same headline number got used
+  including bunkering and support traffic? The same headline figure got used
   for all of these.
 - **Where it came from.** The same figure was repeated by several outlets,
   implying independent confirmation.
@@ -86,8 +86,8 @@ assumption.
 **The absence of a gas score is a decision.** The physical chain
 runs liquefaction → carrier → terminal → pipeline → storage → withdrawal. This
 system observes parts of the European end, with the gaps marked, and does not
-observe the Gulf loading end at all. Collapsing a partially observed chain into
-a composite stress number would manufacture exactly the kind of confident,
+observe Qatari LNG loadings. Collapsing a partially observed chain into
+a composite stress figure would manufacture exactly the kind of confident,
 unsourced figure the project was built in response to.
 
 Pipeline aggregation, Qatar-specific LNG throughput and price confirmation
@@ -130,12 +130,13 @@ revisions to the model.
 Comparing my derived figures with commercial research based on proprietary data
 revealed closer agreement than I expected.
 
-Two figures in my record, a Gulf-export observation of 14.7 mb/d and a Hormuz
-flow estimate of 8.8 mb/d, were close to later published ranges of 14.8–15.8
-mb/d and 8–10 mb/d, respectively. On the gas side, my reading of European LNG
-send-out, materially improved over 30 days but still below the prior year and
-the seasonal median, aligned with independent research that found European
-imports were improving but remained well below year-ago levels.
+Two figures in my record, an observation of Persian Gulf producer exports at
+14.7 mb/d and a Hormuz flow estimate of 8.8 mb/d, were close to later published
+ranges of 14.8–15.8 mb/d and 8–10 mb/d, respectively. On the gas side, my
+reading of European LNG send-out, materially improved over 30 days but still
+below the prior year and the seasonal median, aligned with independent research
+that found European imports were improving but remained well below year-ago
+levels.
 
 The comparisons come from subscription research that is not reproduced or
 identified here, so they cannot be independently verified from this repository.
@@ -144,7 +145,7 @@ identified here, so they cannot be independently verified from this repository.
 
 | Internal observation | Subsequent external comparison | Governance result |
 | --- | --- | --- |
-| Manual Gulf-export observation, 14.7 mb/d | Later external estimates 14.8–15.8 mb/d | Magnitude aligned; measurement still abstains |
+| Manual observation of Persian Gulf producer exports, 14.7 mb/d | Later external estimates 14.8–15.8 mb/d | Magnitude aligned; measurement still abstains |
 | Manual Hormuz flow estimate, 8.8 mb/d | Later external assessment near 8–10 mb/d | Magnitude corroborated; original derivation still unrecovered |
 | EU LNG send-out improving but below year-ago | Independent finding of improving imports still below year-ago | Directionally consistent; quantities not like-for-like |
 
@@ -164,20 +165,19 @@ on recoverable derivation, not on agreement with an outside estimate.
 - **Independence is determined by the underlying source, not the publisher.**
   Two figures derived from the same dataset are not independent confirmations.
   An agency that attributes its figures to a vessel-tracking vendor does not
-  provide independent corroboration. This is why the Gulf-export component
-  abstains.
+  provide independent corroboration. This is why `gulf_exports` abstains.
 - **Persisted and displayed does not mean admitted or scored.** Several series
   are computed, stored and shown while remaining formally inadmissible. The
   dashboard says which is which.
 - **Absence has states.** `UNAVAILABLE`, `STALE` and `FETCH DEGRADED` are
   distinct, displayed, and never silently become zero.
-- **Admissibility is binary.** Every input holds one role — SCORE, DIAGNOSTIC,
-  CONTEXT or REJECT — rather than a continuous confidence weight that lets weak
-  evidence leak into a score at low volume.
-- **Sources are named before searching, not after.** The Gulf-export admission
-  search ran against five criteria frozen before any source was consulted, and
-  the candidate list was not extended during it — a deliberate guard against
-  selecting a source by its output.
+- **Admissibility is binary.** Each governed series holds one role — SCORE,
+  DIAGNOSTIC, CONTEXT or REJECT — rather than a continuous confidence weight
+  that lets weak evidence leak into a score at low volume.
+- **Sources are named before searching, not after.** The source-admission search
+  for `gulf_exports` ran against five criteria frozen before any source was
+  consulted, and the candidate list was not extended during it — a deliberate
+  guard against selecting a source by its output.
 - **Methodology changes are versioned.** A change to a reference window,
   percentile definition, admissibility rule or threshold is a basis change
   requiring an explicit version increment.
